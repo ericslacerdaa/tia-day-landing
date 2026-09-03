@@ -73,5 +73,7 @@
     });
   }
 
+  // expõe para o pop-up (form injetado depois) reutilizar a mesma lógica
+  window.tiaday_bindForm = handle;
   document.querySelectorAll("form.wa-form").forEach(handle);
 })();

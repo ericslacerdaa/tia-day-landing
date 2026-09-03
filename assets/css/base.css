@@ -208,6 +208,28 @@ h2.section-title{font-size:clamp(1.9rem,4vw,3rem);text-align:center;letter-spaci
 .map-embed iframe{width:100%;height:100%;border:0;filter:grayscale(.2)}
 .lp-footer .bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem;color:rgba(255,255,255,.55)}
 
+/* ============ Pop-up de agendamento (canto inferior direito) ============ */
+.form-pop-launcher{position:fixed;right:24px;bottom:96px;z-index:190;display:inline-flex;align-items:center;gap:9px;background:var(--azul-serenity-dark);color:#fff;border:none;border-radius:50px;padding:13px 20px;font-family:var(--font-body);font-weight:600;font-size:.9rem;cursor:pointer;box-shadow:0 16px 40px -14px rgba(116,137,159,.9);transition:transform .35s var(--ease),opacity .3s}
+.form-pop-launcher:hover{transform:translateY(-3px)}
+.form-pop-launcher svg{width:19px;height:19px;flex:0 0 auto}
+.form-pop-launcher.hidden{opacity:0;pointer-events:none;transform:translateY(10px)}
+.form-pop{position:fixed;right:24px;bottom:24px;z-index:210;width:372px;max-width:calc(100vw - 32px);background:#fff;border-radius:22px;box-shadow:0 30px 80px -18px rgba(58,58,60,.55);overflow:hidden;transform:translateY(20px) scale(.98);opacity:0;pointer-events:none;transition:transform .4s var(--ease),opacity .35s}
+.form-pop.open{transform:none;opacity:1;pointer-events:auto}
+.form-pop-head{background:linear-gradient(135deg,var(--azul-serenity),var(--rose-medio));color:#fff;padding:16px 20px;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.form-pop-head h3{color:#fff;font-size:1.15rem;margin-bottom:2px}
+.form-pop-head p{font-size:.76rem;color:rgba(255,255,255,.92);line-height:1.4}
+.form-pop-close{background:rgba(255,255,255,.2);border:none;color:#fff;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:1.3rem;line-height:1;flex:0 0 auto;display:grid;place-items:center;transition:background .3s}
+.form-pop-close:hover{background:rgba(255,255,255,.35)}
+.form-pop-body{padding:18px 20px 20px;max-height:min(68vh,520px);overflow-y:auto}
+.form-pop-body .wa-form label{margin-bottom:12px;font-size:.86rem}
+.form-pop-body .wa-form input,.form-pop-body .wa-form select{padding:12px 14px;font-size:.95rem;border-radius:12px}
+.form-pop-body .form-note{font-size:.74rem;margin:2px 0 14px}
+.form-pop-body .btn-enviar{width:100%}
+@media(max-width:600px){
+  .form-pop{right:10px;left:10px;bottom:10px;width:auto;max-width:none}
+  .form-pop-launcher{right:16px;bottom:82px;padding:11px 16px;font-size:.84rem}
+}
+
 /* ============ WhatsApp flutuante ============ */
 .wa-float{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;align-items:center;background:var(--wa);color:#fff;border-radius:50px;box-shadow:0 16px 40px -12px rgba(37,211,102,.7);height:60px;overflow:hidden;cursor:pointer;transition:transform .4s var(--ease);animation:pulse 2.6s infinite}
 .wa-float:hover{transform:translateY(-4px) scale(1.03)}
