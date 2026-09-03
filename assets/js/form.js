@@ -63,6 +63,7 @@
       var campanha = document.body.getAttribute("data-campanha") || "site";
       try{ if(window.tiaday_track){ window.tiaday_track("form_submit", {campanha:campanha}); }
            else if(typeof window.gtag==="function"){ window.gtag("event","form_submit",{campanha:campanha}); } }catch(err){}
+      try{ if(window.tiaday_lead) window.tiaday_lead("formulario"); }catch(err){}
 
       window.open(url, "_blank");
     });
