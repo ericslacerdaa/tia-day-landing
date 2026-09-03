@@ -204,6 +204,50 @@
   </div>
 </section>
 
+<!-- ================= FORMULÁRIO ================= -->
+<section class="block tint-rose" id="agendar">
+  <div class="container narrow">
+    <div class="form-wrap" data-anim="up">
+      <div class="form-head">
+        <span class="eyebrow">Agendamento</span>
+        <h2>Agende a consulta do seu filho</h2>
+        <p>Preencha e a mensagem já vai montada para o WhatsApp, com a idade da criança e o que você procura.</p>
+      </div>
+      <form class="wa-form" novalidate>
+        <label>Nome do responsável
+          <input name="nome" type="text" placeholder="Seu nome" required />
+        </label>
+        <label>WhatsApp
+          <input name="tel" type="tel" inputmode="tel" placeholder="(31) 9 9999-9999" required />
+        </label>
+        <label>Idade da criança <span class="opt">(opcional)</span>
+          <input name="idade" type="text" placeholder="Ex.: 3 anos, ou 8 meses" />
+        </label>
+        <label>Primeira consulta ou acompanhamento? <span class="opt">(opcional)</span>
+          <select name="tipo">
+            <option value="">Selecione</option>
+            <option>Primeira consulta</option>
+            <option>Acompanhamento / retorno</option>
+          </select>
+        </label>
+        <label>Melhor período <span class="opt">(opcional)</span>
+          <select name="periodo">
+            <option value="">Selecione</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Indiferente</option>
+          </select>
+        </label>
+        <p class="form-note">O que você escrever aqui vai direto para a conversa no WhatsApp. Esta página não guarda nem envia nada para nenhum outro lugar.</p>
+        <button type="submit" class="btn btn-enviar btn-lg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4-1.1l-.3-.2-2.8.7.7-2.8-.2-.3A8 8 0 1112 20z"/></svg>
+          Enviar no WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- ================= CTA FINAL ================= -->
 <section class="cta-final">
   <img src="../assets/logo-vertical.png" alt="" aria-hidden="true" class="cta-watermark" />
@@ -252,5 +296,6 @@
 </a>
 
 <script src="../assets/js/campanha.js"></script>
+<script src="../assets/js/form.js"></script>
 </body>
 </html>

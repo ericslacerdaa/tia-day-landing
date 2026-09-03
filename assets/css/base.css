@@ -169,6 +169,22 @@ h2.section-title{font-size:clamp(1.9rem,4vw,3rem);text-align:center;letter-spaci
 .faq-a{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
 .faq-a p{padding:0 24px 22px;color:var(--tinta-suave);font-size:.92rem}
 
+/* ============ Formulário de agendamento ============ */
+.form-wrap{background:#fff;border-radius:var(--radius);padding:clamp(28px,4vw,46px);box-shadow:var(--shadow-card);max-width:640px;margin:0 auto}
+.form-head{margin-bottom:24px}
+.form-head h2{text-align:left;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:10px}
+.form-head p{color:var(--tinta-suave);font-size:.98rem;max-width:none}
+.wa-form label{display:block;font-weight:600;font-size:.92rem;margin-bottom:17px;color:var(--tinta)}
+.wa-form .opt{font-weight:400;color:var(--tinta-suave);font-size:.82rem}
+.wa-form input,.wa-form select{width:100%;margin-top:8px;padding:15px 16px;border:1.5px solid rgba(145,165,197,.35);border-radius:14px;font-family:var(--font-body);font-size:1rem;color:var(--tinta);background:#fff;transition:border-color .3s,box-shadow .3s}
+.wa-form input::placeholder{color:#9a9aa0}
+.wa-form input:focus,.wa-form select:focus{outline:none;border-color:var(--azul-serenity);box-shadow:0 0 0 4px rgba(145,165,197,.18)}
+.wa-form input.erro,.wa-form select.erro{border-color:#d98b86;box-shadow:0 0 0 4px rgba(217,139,134,.16)}
+.wa-form select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2374899f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
+.form-note{font-size:.82rem;color:var(--tinta-suave);margin:4px 0 20px;line-height:1.5}
+.wa-form .btn-enviar{width:100%;background:var(--azul-serenity-dark);color:#fff;box-shadow:0 16px 34px -16px rgba(116,137,159,.9)}
+.wa-form .btn-enviar:hover{transform:translateY(-3px);box-shadow:0 26px 48px -18px rgba(116,137,159,1);filter:brightness(1.05)}
+
 /* ============ CTA final ============ */
 .cta-final{text-align:center;color:#fff;overflow:hidden;position:relative;padding:clamp(74px,10vw,130px) 26px;background:linear-gradient(135deg,rgba(116,137,159,.94),rgba(196,155,150,.9)),var(--azul-serenity)}
 .cta-final > *{position:relative;z-index:1}

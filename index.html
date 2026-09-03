@@ -388,6 +388,24 @@ header.nav.scrolled{
 .blog-body p{font-size:.86rem;color:var(--tinta-suave);margin-bottom:14px}
 .blog-body .more{font-size:.84rem;font-weight:600;color:var(--azul-serenity-dark);display:inline-flex;gap:6px;align-items:center}
 
+/* ============ Formulário de agendamento ============ */
+.container.narrow{max-width:920px}
+.form-wrap{background:#fff;border-radius:var(--radius);padding:clamp(28px,4vw,46px);box-shadow:var(--shadow-card);max-width:640px;margin:0 auto}
+.form-head{margin-bottom:24px}
+.form-head h2{text-align:left;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:10px}
+.form-head p{color:var(--tinta-suave);font-size:.98rem;max-width:none}
+.wa-form label{display:block;font-weight:600;font-size:.92rem;margin-bottom:17px;color:var(--tinta)}
+.wa-form .opt{font-weight:400;color:var(--tinta-suave);font-size:.82rem}
+.wa-form input,.wa-form select{width:100%;margin-top:8px;padding:15px 16px;border:1.5px solid rgba(145,165,197,.35);border-radius:14px;font-family:var(--font-body);font-size:1rem;color:var(--tinta);background:#fff;transition:border-color .3s,box-shadow .3s}
+.wa-form input::placeholder{color:#9a9aa0}
+.wa-form input:focus,.wa-form select:focus{outline:none;border-color:var(--azul-serenity);box-shadow:0 0 0 4px rgba(145,165,197,.18)}
+.wa-form input.erro,.wa-form select.erro{border-color:#d98b86;box-shadow:0 0 0 4px rgba(217,139,134,.16)}
+.wa-form select{appearance:none;-webkit-appearance:none;cursor:pointer;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%2374899f' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");background-repeat:no-repeat;background-position:right 16px center;padding-right:44px}
+.form-note{font-size:.82rem;color:var(--tinta-suave);margin:4px 0 20px;line-height:1.5}
+.wa-form .btn-enviar{width:100%;background:var(--azul-serenity-dark);color:#fff;box-shadow:0 16px 34px -16px rgba(116,137,159,.9)}
+.wa-form .btn-enviar:hover{transform:translateY(-3px);box-shadow:0 26px 48px -18px rgba(116,137,159,1);filter:brightness(1.05)}
+.wa-form .btn-enviar svg{width:20px;height:20px}
+
 /* ============ CTA final ============ */
 .cta-final{
   text-align:center;color:#fff;border-radius:0;overflow:hidden;position:relative;
@@ -502,7 +520,7 @@ footer a:hover{color:var(--rose-claro)}
     <a href="#faq">Dúvidas</a>
   </nav>
   <div class="nav-cta">
-    <a href="#agendar" class="btn btn-primary">Agendar Consulta</a>
+    <a href="#agendar-form" class="btn btn-primary">Agendar Consulta</a>
     <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -515,7 +533,7 @@ footer a:hover{color:var(--rose-claro)}
       <h1>Cuidamos do sorriso do seu filho <span class="accent">desde os primeiros meses de vida.</span></h1>
       <p class="sub">Consultas acolhedoras, tecnologia de ponta e atendimento humanizado para que seu filho tenha uma experiência tranquila no dentista.</p>
       <div class="hero-actions">
-        <a href="#agendar" class="btn btn-primary">Agendar Consulta</a>
+        <a href="#agendar-form" class="btn btn-primary">Agendar Consulta</a>
         <a href="#tour" class="btn btn-ghost">Conhecer o Consultório</a>
       </div>
       <ul class="trust-badges">
@@ -642,7 +660,7 @@ footer a:hover{color:var(--rose-claro)}
       <div class="g-item wide"><img class="photo-img" loading="lazy" src="assets/capas6.jpg" alt="Ambiente do consultório Tia Day" /></div>
     </div>
     <div class="center" style="margin-top:46px" data-anim="up">
-      <a href="#agendar" class="btn btn-primary btn-lg">Quero conhecer pessoalmente</a>
+      <a href="#agendar-form" class="btn btn-primary btn-lg">Quero conhecer pessoalmente</a>
     </div>
   </div>
 </section>
@@ -716,7 +734,7 @@ footer a:hover{color:var(--rose-claro)}
       <div class="trat-card" data-anim="up"><div class="trat-photo"><div class="photo"><span class="ph-label">Bruxismo</span></div></div><div class="trat-body"><h4>Bruxismo Infantil</h4><p>Acompanhamento e proteção do sorriso.</p></div></div>
       <div class="trat-card" data-anim="up"><div class="trat-photo"><div class="photo"><span class="ph-label">Mantenedores</span></div></div><div class="trat-body"><h4>Mantenedores de Espaço</h4><p>Guardam o lugar dos dentes permanentes.</p></div></div>
     </div>
-    <div class="center" style="margin-top:46px" data-anim="up"><a href="#agendar" class="btn btn-primary btn-lg">Saiba Mais</a></div>
+    <div class="center" style="margin-top:46px" data-anim="up"><a href="#agendar-form" class="btn btn-primary btn-lg">Saiba Mais</a></div>
   </div>
 </section>
 
@@ -850,6 +868,50 @@ footer a:hover{color:var(--rose-claro)}
   </div>
 </section>
 
+<!-- =================== FORMULÁRIO =================== -->
+<section class="block tint-rose" id="agendar-form">
+  <div class="container narrow">
+    <div class="form-wrap" data-anim="up">
+      <div class="form-head">
+        <span class="eyebrow">Agendamento</span>
+        <h2>Agende a consulta do seu filho</h2>
+        <p>Preencha e a mensagem já vai montada para o WhatsApp, com a idade da criança e o que você procura.</p>
+      </div>
+      <form class="wa-form" novalidate>
+        <label>Nome do responsável
+          <input name="nome" type="text" placeholder="Seu nome" required />
+        </label>
+        <label>WhatsApp
+          <input name="tel" type="tel" inputmode="tel" placeholder="(31) 9 9999-9999" required />
+        </label>
+        <label>Idade da criança <span class="opt">(opcional)</span>
+          <input name="idade" type="text" placeholder="Ex.: 3 anos, ou 8 meses" />
+        </label>
+        <label>Primeira consulta ou acompanhamento? <span class="opt">(opcional)</span>
+          <select name="tipo">
+            <option value="">Selecione</option>
+            <option>Primeira consulta</option>
+            <option>Acompanhamento / retorno</option>
+          </select>
+        </label>
+        <label>Melhor período <span class="opt">(opcional)</span>
+          <select name="periodo">
+            <option value="">Selecione</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Indiferente</option>
+          </select>
+        </label>
+        <p class="form-note">O que você escrever aqui vai direto para a conversa no WhatsApp. Esta página não guarda nem envia nada para nenhum outro lugar.</p>
+        <button type="submit" class="btn btn-enviar btn-lg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4-1.1l-.3-.2-2.8.7.7-2.8-.2-.3A8 8 0 1112 20z"/></svg>
+          Enviar no WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- =================== CTA FINAL =================== -->
 <section class="cta-final" id="agendar">
   <img src="assets/logo-vertical.png" alt="" aria-hidden="true" class="cta-watermark" />
@@ -923,7 +985,7 @@ const CONFIG = {
 const waUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.mensagem)}`;
 document.getElementById("waFloat").href = waUrl;
 document.getElementById("ctaWhats").href = waUrl;
-document.querySelectorAll('a[href="#agendar"]').forEach(a=>{
+document.querySelectorAll('a[href="#agendar-form"]').forEach(a=>{
   // os botões "Agendar Consulta" do topo levam à seção; o CTA final abre o WhatsApp
 });
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -1020,5 +1082,6 @@ document.querySelectorAll(".faq-q").forEach(q=>{
   add(".tech-card", "h3", ".tech-body");
 })();
 </script>
+<script src="assets/js/form.js"></script>
 </body>
 </html>

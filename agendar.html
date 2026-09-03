@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Agende a Consulta | Dra. Dayane Rodrigues — Odontopediatra em BH</title>
+<meta name="description" content="Agende a consulta do seu filho com a Dra. Dayane Rodrigues, odontopediatra em Belo Horizonte. Preencha e a mensagem já vai montada para o WhatsApp." />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#91A5C5" />
+<link rel="icon" type="image/png" href="assets/logo-mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/base.css" />
+
+<!-- ===== Google Analytics 4 (substituir G-XXXXXXXXXX pelo ID real) ===== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+<style>
+  .agendar-page{min-height:100vh;display:flex;flex-direction:column;background:radial-gradient(900px 500px at 50% 0%,rgba(220,192,191,.42),transparent 60%),var(--off-white)}
+  .agendar-top{display:flex;justify-content:center;padding:34px 20px 6px}
+  .agendar-top img{height:66px}
+  .agendar-main{flex:1;display:flex;align-items:center;justify-content:center;padding:20px 20px 50px}
+  .agendar-foot{text-align:center;padding:18px;font-size:.82rem;color:var(--tinta-suave)}
+  .agendar-foot a{color:var(--azul-serenity-dark);font-weight:600}
+  .trust-line{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin:6px 0 18px;font-size:.82rem;color:var(--tinta-suave)}
+  .trust-line b{color:var(--azul-serenity-dark)}
+</style>
+</head>
+<body data-campanha="agendar">
+<div class="agendar-page">
+  <div class="agendar-top">
+    <a href="index.html"><img src="assets/logo-vertical.png" alt="Dra. Dayane Rodrigues — Odontopediatra" /></a>
+  </div>
+  <div class="trust-line">
+    <span>⭐ <b>5,0</b> no Google</span>
+    <span>👶 Especialista infantil</span>
+    <span>🕐 Urgência 24h</span>
+  </div>
+  <main class="agendar-main">
+    <div class="form-wrap">
+      <div class="form-head">
+        <span class="eyebrow">Agendamento</span>
+        <h2>Agende a consulta do seu filho</h2>
+        <p>Preencha e a mensagem já vai montada para o WhatsApp, com a idade da criança e o que você procura.</p>
+      </div>
+      <form class="wa-form" novalidate>
+        <label>Nome do responsável
+          <input name="nome" type="text" placeholder="Seu nome" required />
+        </label>
+        <label>WhatsApp
+          <input name="tel" type="tel" inputmode="tel" placeholder="(31) 9 9999-9999" required />
+        </label>
+        <label>Idade da criança <span class="opt">(opcional)</span>
+          <input name="idade" type="text" placeholder="Ex.: 3 anos, ou 8 meses" />
+        </label>
+        <label>Primeira consulta ou acompanhamento? <span class="opt">(opcional)</span>
+          <select name="tipo">
+            <option value="">Selecione</option>
+            <option>Primeira consulta</option>
+            <option>Acompanhamento / retorno</option>
+          </select>
+        </label>
+        <label>Melhor período <span class="opt">(opcional)</span>
+          <select name="periodo">
+            <option value="">Selecione</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Indiferente</option>
+          </select>
+        </label>
+        <p class="form-note">O que você escrever aqui vai direto para a conversa no WhatsApp. Esta página não guarda nem envia nada para nenhum outro lugar.</p>
+        <button type="submit" class="btn btn-enviar btn-lg">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4-1.1l-.3-.2-2.8.7.7-2.8-.2-.3A8 8 0 1112 20z"/></svg>
+          Enviar no WhatsApp
+        </button>
+      </form>
+    </div>
+  </main>
+  <div class="agendar-foot">
+    R. Bernardo Guimarães, 1843 — Lourdes, Belo Horizonte/MG · <a href="index.html">Ver o site</a>
+  </div>
+</div>
+<script src="assets/js/form.js"></script>
+</body>
+</html>
