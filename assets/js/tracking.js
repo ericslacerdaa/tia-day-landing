@@ -11,7 +11,7 @@
     ga4:       "G-2194G7EJKR",   // Google Analytics 4
     googleAds: "",   // Google Ads          — ex: "AW-123456789"
     adsLabel:  "",   // rótulo de conversão do Google Ads (ex: "AbC-D_efG")
-    metaPixel: ""    // Meta/Facebook Pixel — ex: "123456789012345"
+    metaPixel: "1408935801179368"    // Meta/Facebook Pixel
   };
 
   // Identifica a página atual (para rastrear cada uma individualmente)
