@@ -8,7 +8,7 @@
   "use strict";
 
   var IDS = {
-    ga4:       "",   // Google Analytics 4  — ex: "G-XXXXXXXXXX"
+    ga4:       "G-2194G7EJKR",   // Google Analytics 4
     googleAds: "",   // Google Ads          — ex: "AW-123456789"
     adsLabel:  "",   // rótulo de conversão do Google Ads (ex: "AbC-D_efG")
     metaPixel: ""    // Meta/Facebook Pixel — ex: "123456789012345"
