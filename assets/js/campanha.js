@@ -17,7 +17,15 @@
     || "Olá! Gostaria de agendar uma consulta com a Dra. Dayane. 😊";
   const campanhaId = document.body.getAttribute("data-campanha") || "site";
 
-  const waUrl = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(campanhaMsg);
+  function buildMsg(){
+    var msg = campanhaMsg;
+    try{
+      var lines = (window.tiaday_utm_lines ? window.tiaday_utm_lines() : []);
+      if(lines.length) msg += "\n\n(" + lines.join(" | ") + ")";
+    }catch(e){}
+    return msg;
+  }
+  const waUrl = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(buildMsg());
 
   // Aplica o link do WhatsApp em tudo que tiver .js-wa (ou href="#whats")
   document.querySelectorAll('.js-wa, a[href="#whats"]').forEach(function(a){

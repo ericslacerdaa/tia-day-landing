@@ -390,6 +390,17 @@ header.nav.scrolled{
 .blog-body p{font-size:.86rem;color:var(--tinta-suave);margin-bottom:14px}
 .blog-body .more{font-size:.84rem;font-weight:600;color:var(--azul-serenity-dark);display:inline-flex;gap:6px;align-items:center}
 
+/* ============ Links para campanhas ============ */
+.lp-links{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.lp-link{background:#fff;border-radius:var(--radius-sm);padding:28px 22px;box-shadow:var(--shadow-soft);text-align:center;transition:transform .4s var(--ease),box-shadow .4s var(--ease);display:flex;flex-direction:column;gap:6px}
+.lp-link:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover)}
+.lp-link .emo{font-size:2rem}
+.lp-link h4{font-size:1.02rem}
+.lp-link p{font-size:.82rem;color:var(--tinta-suave);flex:1}
+.lp-link .go{margin-top:8px;font-weight:600;color:var(--azul-serenity-dark);font-size:.84rem}
+@media(max-width:1024px){.lp-links{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.lp-links{grid-template-columns:1fr}}
+
 /* ============ Formulário de agendamento ============ */
 .container.narrow{max-width:920px}
 .form-wrap{background:#fff;border-radius:var(--radius);padding:clamp(28px,4vw,46px);box-shadow:var(--shadow-card);max-width:640px;margin:0 auto}
@@ -773,6 +784,23 @@ footer a:hover{color:var(--rose-claro)}
   </div>
 </section>
 
+<!-- =================== CAMPANHAS / LINKS PARA LPs =================== -->
+<section class="block tint-rose" id="campanhas">
+  <div class="container">
+    <div class="section-head" data-anim="up">
+      <span class="eyebrow">Para cada momento</span>
+      <h2 class="section-title">O cuidado ideal para a fase do seu filho</h2>
+      <p>Escolha a fase e veja o conteúdo feito para ela.</p>
+    </div>
+    <div class="lp-links">
+      <a class="lp-link" href="campanhas/recem-nascidos.html" data-anim="up"><span class="emo">👶</span><h4>Recém-nascidos</h4><p>Língua presa, amamentação e a primeira visita.</p><span class="go">Ver página →</span></a>
+      <a class="lp-link" href="campanhas/primeiros-dentinhos.html" data-anim="up"><span class="emo">🍼</span><h4>Primeiros dentinhos</h4><p>6 meses a 3 anos: nascimento dos dentes e higiene.</p><span class="go">Ver página →</span></a>
+      <a class="lp-link" href="campanhas/troca-de-dentes.html" data-anim="up"><span class="emo">🦷</span><h4>Troca de dentes</h4><p>Dentição mista, mordida e ortodontia preventiva.</p><span class="go">Ver página →</span></a>
+      <a class="lp-link" href="campanhas/check-up.html" data-anim="up"><span class="emo">🩺</span><h4>Check-up inicial</h4><p>Há 6+ meses sem ir ao dentista? Comece por aqui.</p><span class="go">Ver página →</span></a>
+    </div>
+  </div>
+</section>
+
 <!-- =================== COMO FUNCIONA A CONSULTA =================== -->
 <section class="block tint-bege" id="consulta">
   <div class="container">
@@ -1002,7 +1030,9 @@ const CONFIG = {
   whatsapp: "5531990606482", // <-- DDI+DDD+número, somente dígitos
   mensagem: "Olá! Gostaria de agendar uma consulta com a Dra. Dayane para meu filho(a). 😊"
 };
-const waUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.mensagem)}`;
+let _msg = CONFIG.mensagem;
+try{ const _l = (window.tiaday_utm_lines ? window.tiaday_utm_lines() : []); if(_l.length) _msg += "\n\n(" + _l.join(" | ") + ")"; }catch(e){}
+const waUrl = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(_msg)}`;
 document.getElementById("waFloat").href = waUrl;
 document.getElementById("ctaWhats").href = waUrl;
 document.querySelectorAll('a[href="#agendar-form"]').forEach(a=>{

@@ -36,6 +36,10 @@
     if(periodo) linhas.push("• Melhor período: " + periodo);
     if(tel)     linhas.push("• Meu WhatsApp: " + tel);
     if(LABELS[campanha]) { linhas.push(""); linhas.push("(Vim pela página de " + LABELS[campanha] + ")"); }
+    try{
+      var utmLines = (window.tiaday_utm_lines ? window.tiaday_utm_lines() : []);
+      if(utmLines.length){ linhas.push("(" + utmLines.join(" | ") + ")"); }
+    }catch(e){}
 
     return linhas.join("\n");
   }
