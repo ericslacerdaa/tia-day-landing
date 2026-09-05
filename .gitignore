@@ -2,3 +2,8 @@ Thumbs.db
 desktop.ini
 .DS_Store
 *.tmp
+
+# Ferramentas de desenvolvimento (skills/MCP) — não fazem parte do site
+.agents/
+.claude/
+.mcp.json
