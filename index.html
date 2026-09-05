@@ -290,11 +290,15 @@ header.nav.scrolled{
 .dif-card p{font-size:.82rem;color:var(--tinta-suave);line-height:1.5}
 
 /* ============ Tour / Galeria ============ */
-.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:16px}
-.gallery .g-item{border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-soft);transition:transform .5s var(--ease)}
-.gallery .g-item:hover{transform:scale(1.015)}
-.gallery .g-item .photo,.gallery .g-item .photo-img{transition:transform .8s var(--ease)}
-.gallery .g-item:hover .photo,.gallery .g-item:hover .photo-img{transform:scale(1.06)}
+/* Carrossel infinito (Tour) */
+.marquee{overflow:hidden;position:relative;padding:6px 0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 5%,#000 95%,transparent 100%)}
+.marquee-track{display:flex;width:max-content;animation:tourscroll 45s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.m-item{flex:0 0 auto;width:clamp(230px,25vw,320px);height:260px;margin-right:18px;border-radius:var(--radius-sm);overflow:hidden;box-shadow:var(--shadow-soft)}
+.m-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s var(--ease)}
+.m-item:hover img{transform:scale(1.06)}
+@keyframes tourscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}.marquee{overflow-x:auto}}
 .gallery .tall{grid-row:span 2}
 .gallery .wide{grid-column:span 2}
 
@@ -683,14 +687,25 @@ footer a:hover{color:var(--rose-claro)}
       <h2 class="section-title">Um espaço pensado para acolher</h2>
       <p>Ambientes claros, delicados e preparados para que cada visita seja tranquila.</p>
     </div>
-    <div class="gallery" data-anim="zoom">
-      <div class="g-item wide"><img class="photo-img" loading="lazy" src="assets/capas2.jpg" alt="Dra. Dayane no consultório com brinquedoteca" /></div>
-      <div class="g-item tall"><img class="photo-img" loading="lazy" src="assets/capas5.jpg" alt="Dra. Dayane com livro infantil para acolher a criança" /></div>
-      <div class="g-item"><img class="photo-img" loading="lazy" src="assets/capas3.jpg" alt="Dra. Dayane ensinando a escovação" /></div>
-      <div class="g-item"><img class="photo-img" loading="lazy" src="assets/capas4.jpg" alt="Orientação de higiene bucal infantil" /></div>
-      <div class="g-item"><img class="photo-img" loading="lazy" src="assets/capas0.jpg" alt="Dra. Dayane sorrindo no consultório" /></div>
-      <div class="g-item wide"><img class="photo-img" loading="lazy" src="assets/capas6.jpg" alt="Ambiente do consultório Tia Day" /></div>
+  </div>
+  <div class="marquee" data-anim="zoom">
+    <div class="marquee-track">
+      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas2.jpg" alt="Dra. Dayane no consultório com brinquedoteca" /></div>
+      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas5.jpg" alt="Dra. Dayane com livro infantil para acolher a criança" /></div>
+      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas3.jpg" alt="Dra. Dayane ensinando a escovação" /></div>
+      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas4.jpg" alt="Orientação de higiene bucal infantil" /></div>
+      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas0.jpg" alt="Dra. Dayane sorrindo no consultório" /></div>
+      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas6.jpg" alt="Ambiente do consultório Tia Day" /></div>
+      <!-- duplicado para o loop contínuo -->
+      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas2.jpg" alt="" /></div>
+      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas5.jpg" alt="" /></div>
+      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas3.jpg" alt="" /></div>
+      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas4.jpg" alt="" /></div>
+      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas0.jpg" alt="" /></div>
+      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas6.jpg" alt="" /></div>
     </div>
+  </div>
+  <div class="container">
     <div class="center" style="margin-top:46px" data-anim="up">
       <a href="#agendar-form" class="btn btn-primary btn-lg">Quero conhecer pessoalmente</a>
     </div>
