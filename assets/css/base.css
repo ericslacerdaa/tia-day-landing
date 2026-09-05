@@ -7,6 +7,8 @@
   --azul-serenity-dark:#74899f;
   --rose-claro:#DCC0BF;
   --rose-medio:#C49B96;
+  --rose-texto:#92635b;
+  --azul-texto:#5c7186;
   --bege:#E9D6C8;
   --verde-salvia:#B0B8AE;
   --off-white:#F3EFED;
@@ -38,7 +40,7 @@ section{position:relative}
 .container.narrow{max-width:var(--maxw-narrow)}
 .center{text-align:center}
 
-.eyebrow{display:inline-block;font-family:var(--font-body);font-weight:600;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--rose-medio);margin-bottom:14px}
+.eyebrow{display:inline-block;font-family:var(--font-body);font-weight:600;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;color:var(--rose-texto);margin-bottom:14px}
 h2.section-title{font-size:clamp(1.9rem,4vw,3rem);text-align:center;letter-spacing:.5px}
 .lead{color:var(--tinta-suave);font-size:1.05rem;max-width:620px;margin:0 auto}
 .section-head{max-width:680px;margin:0 auto 56px;text-align:center}
