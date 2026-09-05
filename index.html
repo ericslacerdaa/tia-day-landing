@@ -318,7 +318,7 @@ header.nav.scrolled{
 .trat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .trat-card{background:#fff;border-radius:var(--radius-sm);padding:26px 24px 22px;box-shadow:var(--shadow-soft);transition:transform .4s var(--ease),box-shadow .4s var(--ease);display:flex;flex-direction:column;align-items:flex-start}
 .trat-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
-.trat-card .ic{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;font-size:1.4rem;background:linear-gradient(135deg,var(--azul-serenity),var(--rose-claro));color:#fff;margin-bottom:16px;flex:0 0 auto}
+.trat-card::before{content:"";width:34px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--azul-serenity),var(--rose-medio));margin-bottom:16px;flex:0 0 auto}
 .trat-card h4{font-size:1rem;margin-bottom:5px}
 .trat-card p{font-size:.82rem;color:var(--tinta-suave);line-height:1.5;flex:1}
 .trat-card .card-cta{margin-top:14px}
@@ -767,18 +767,18 @@ footer a:hover{color:var(--rose-claro)}
       <h2 class="section-title">Cuidado completo para cada sorriso</h2>
     </div>
     <div class="trat-grid">
-      <div class="trat-card" data-anim="up"><span class="ic">🛡️</span><h4>Prevenção</h4><p>O cuidado que evita problemas futuros.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">✨</span><h4>Limpeza</h4><p>Higiene profissional e delicada.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">💧</span><h4>Aplicação de Flúor</h4><p>Fortalece e protege os dentinhos.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">🔒</span><h4>Selantes</h4><p>Barreira protetora contra a cárie.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">🩹</span><h4>Tratamento de Cárie</h4><p>Restaurações suaves e seguras.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">🌱</span><h4>Canal em Dente de Leite</h4><p>Preserva o dentinho com conforto.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">⚡</span><h4>Frenectomia</h4><p>Correção precisa com laser.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">👶</span><h4>Frenotomia</h4><p>Avaliação da língua presa do bebê.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">🚑</span><h4>Traumatismos Dentários</h4><p>Atendimento de urgência cuidadoso.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">🌬️</span><h4>Respiração Bucal</h4><p>Avaliação e orientação especializada.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">😴</span><h4>Bruxismo Infantil</h4><p>Acompanhamento e proteção do sorriso.</p></div>
-      <div class="trat-card" data-anim="up"><span class="ic">📐</span><h4>Mantenedores de Espaço</h4><p>Guardam o lugar dos dentes permanentes.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Prevenção</h4><p>O cuidado que evita problemas futuros.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Limpeza</h4><p>Higiene profissional e delicada.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Aplicação de Flúor</h4><p>Fortalece e protege os dentinhos.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Selantes</h4><p>Barreira protetora contra a cárie.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Tratamento de Cárie</h4><p>Restaurações suaves e seguras.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Canal em Dente de Leite</h4><p>Preserva o dentinho com conforto.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Frenectomia</h4><p>Correção precisa com laser.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Frenotomia</h4><p>Avaliação da língua presa do bebê.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Traumatismos Dentários</h4><p>Atendimento de urgência cuidadoso.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Respiração Bucal</h4><p>Avaliação e orientação especializada.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Bruxismo Infantil</h4><p>Acompanhamento e proteção do sorriso.</p></div>
+      <div class="trat-card" data-anim="up"><h4>Mantenedores de Espaço</h4><p>Guardam o lugar dos dentes permanentes.</p></div>
     </div>
     <div class="center" style="margin-top:46px" data-anim="up"><a href="#agendar-form" class="btn btn-primary btn-lg">Saiba Mais</a></div>
   </div>
