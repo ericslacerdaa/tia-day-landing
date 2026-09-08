@@ -23,4 +23,4 @@ No fim do `index.html`, em `CONFIG`, ajuste o número de WhatsApp e a mensagem p
 ## Contato do consultório
 - 📍 R. Bernardo Guimarães, 1843 — Lourdes, Belo Horizonte/MG · 30180-082
 - 📱 (31) 99060-6482 · Atendimento de urgência 24h
-- ⭐ 5,0 no Google (+90 avaliações)
+- ⭐ 5,0 no Google (+100 avaliações)
