@@ -688,21 +688,8 @@ footer a:hover{color:var(--rose-claro)}
     </div>
   </div>
   <div class="marquee" data-anim="zoom">
-    <div class="marquee-track">
-      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas2.jpg" alt="Dra. Dayane no consultório com brinquedoteca" /></div>
-      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas5.jpg" alt="Dra. Dayane com livro infantil para acolher a criança" /></div>
-      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas3.jpg" alt="Dra. Dayane ensinando a escovação" /></div>
-      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas4.jpg" alt="Orientação de higiene bucal infantil" /></div>
-      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas0.jpg" alt="Dra. Dayane sorrindo no consultório" /></div>
-      <div class="m-item"><img class="photo-img" loading="lazy" src="assets/capas6.jpg" alt="Ambiente do consultório Tia Day" /></div>
-      <!-- duplicado para o loop contínuo -->
-      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas2.jpg" alt="" /></div>
-      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas5.jpg" alt="" /></div>
-      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas3.jpg" alt="" /></div>
-      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas4.jpg" alt="" /></div>
-      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas0.jpg" alt="" /></div>
-      <div class="m-item" aria-hidden="true"><img class="photo-img" loading="lazy" src="assets/capas6.jpg" alt="" /></div>
-    </div>
+    <!-- Preenchido por JS a partir de assets/tour/ (com reserva nas fotos atuais) -->
+    <div class="marquee-track" id="tourTrack"></div>
   </div>
   <div class="container"><div class="tour-progress"><span></span></div></div>
   <div class="container">
@@ -1095,6 +1082,28 @@ const heroPhoto = document.querySelector(".hero-photo");
 addEventListener("scroll",()=>{
   if(scrollY<800 && heroPhoto) heroPhoto.style.transform = `translateY(${scrollY*0.05}px)`;
 },{passive:true});
+
+/* ===== Monta o carrossel do Tour a partir de assets/tour/ ===== */
+(function(){
+  const track = document.getElementById("tourTrack");
+  if(!track) return;
+  const imgs = [
+    {s:"assets/tour/tour-1.jpg", f:"assets/capas2.jpg", a:"Recepção do consultório"},
+    {s:"assets/tour/tour-2.jpg", f:"assets/capas5.jpg", a:"Sala de espera e brinquedoteca"},
+    {s:"assets/tour/tour-3.jpg", f:"assets/capas3.jpg", a:"Sala clínica"},
+    {s:"assets/tour/tour-4.jpg", f:"assets/capas4.jpg", a:"Equipamentos"},
+    {s:"assets/tour/tour-5.jpg", f:"assets/capas0.jpg", a:"Ambiente acolhedor"},
+    {s:"assets/tour/tour-6.jpg", f:"assets/capas6.jpg", a:"Detalhes do espaço"}
+  ];
+  function build(hidden){
+    return imgs.map(function(o){
+      return '<div class="m-item"><img class="photo-img" loading="lazy" src="' + o.s + '"'
+        + ' alt="' + (hidden ? "" : o.a) + '"' + (hidden ? ' aria-hidden="true"' : '')
+        + ' onerror="this.onerror=null;this.src=\'' + o.f + '\'"></div>';
+    }).join("");
+  }
+  track.innerHTML = build(false) + build(true); // 2x para o loop contínuo
+})();
 
 /* ===== Carrossel do Tour controlado pelo scroll da página ===== */
 (function(){
