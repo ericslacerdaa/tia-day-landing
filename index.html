@@ -1088,22 +1088,33 @@ addEventListener("scroll",()=>{
 (function(){
   const track = document.getElementById("tourTrack");
   if(!track) return;
-  const imgs = [
-    {s:"assets/tour/tour-1.jpg", f:"assets/capas2.jpg", a:"Recepção do consultório"},
-    {s:"assets/tour/tour-2.jpg", f:"assets/capas5.jpg", a:"Sala de espera e brinquedoteca"},
-    {s:"assets/tour/tour-3.jpg", f:"assets/capas3.jpg", a:"Sala clínica"},
-    {s:"assets/tour/tour-4.jpg", f:"assets/capas4.jpg", a:"Equipamentos"},
-    {s:"assets/tour/tour-5.jpg", f:"assets/capas0.jpg", a:"Ambiente acolhedor"},
-    {s:"assets/tour/tour-6.jpg", f:"assets/capas6.jpg", a:"Detalhes do espaço"}
+  // Fallback caso o JSON não carregue (mantém o site sempre funcional)
+  const fallback = [
+    {image:"assets/tour/tour-1.jpg", alt:"Recepção do consultório"},
+    {image:"assets/tour/tour-2.jpg", alt:"Sala de espera e brinquedoteca"},
+    {image:"assets/tour/tour-3.jpg", alt:"Sala clínica"},
+    {image:"assets/tour/tour-4.jpg", alt:"Equipamentos"},
+    {image:"assets/tour/tour-5.jpg", alt:"Ambiente acolhedor"},
+    {image:"assets/tour/tour-6.jpg", alt:"Detalhes do espaço"}
   ];
-  function build(hidden){
-    return imgs.map(function(o){
-      return '<div class="m-item"><img class="photo-img" loading="lazy" src="' + o.s + '"'
-        + ' alt="' + (hidden ? "" : o.a) + '"' + (hidden ? ' aria-hidden="true"' : '')
-        + ' onerror="this.onerror=null;this.src=\'' + o.f + '\'"></div>';
+  function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;");}
+  function norm(src){ return src && src.charAt(0)==="/" ? src.slice(1) : src; } // "/assets/..." -> "assets/..."
+  function build(fotos, hidden){
+    return fotos.map(function(o){
+      var src = esc(norm(o.image));
+      return '<div class="m-item"><img class="photo-img" loading="lazy" src="' + src + '"'
+        + ' alt="' + (hidden ? "" : esc(o.alt)) + '"' + (hidden ? ' aria-hidden="true"' : '') + '></div>';
     }).join("");
   }
-  track.innerHTML = build(false) + build(true); // 2x para o loop contínuo
+  function fill(fotos){
+    if(!fotos || !fotos.length) fotos = fallback;
+    track.innerHTML = build(fotos, false) + build(fotos, true); // 2x para o loop contínuo
+    try{ dispatchEvent(new Event("resize")); }catch(e){} // recalcula o scroll
+  }
+  fetch("content/tour.json", {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(j){ fill(j.fotos); })
+    .catch(function(){ fill(fallback); });
 })();
 
 /* ===== Carrossel do Tour controlado pelo scroll da página ===== */

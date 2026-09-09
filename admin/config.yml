@@ -1,0 +1,66 @@
+backend:
+  name: github
+  repo: ericslacerdaa/tia-day-landing
+  branch: main
+  base_url: https://api.netlify.com
+
+media_folder: "assets/tour"
+public_folder: "/assets/tour"
+
+locale: pt
+
+collections:
+  - name: tratamentos
+    label: "Tratamentos"
+    files:
+      - name: lista
+        label: "Lista de tratamentos"
+        file: "content/tratamentos.json"
+        format: json
+        fields:
+          - name: itens
+            label: "Tratamentos"
+            label_singular: "Tratamento"
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: "Título", widget: string }
+              - { name: slug, label: "Slug (URL, sem espaços/acentos)", widget: string, hint: "Ex.: frenectomia — define o link ?t=..." }
+              - { name: cat, label: "Categoria", widget: string, hint: "Ex.: Prevenção, Procedimento, Problema, Urgência" }
+              - { name: intro, label: "Resumo (aparece no topo)", widget: text }
+              - name: blocks
+                label: "Blocos de explicação"
+                label_singular: "Bloco"
+                widget: list
+                summary: "{{fields.h}}"
+                fields:
+                  - { name: h, label: "Subtítulo", widget: string }
+                  - { name: p, label: "Texto", widget: text }
+              - name: faq
+                label: "Perguntas frequentes (opcional)"
+                label_singular: "Pergunta"
+                widget: list
+                required: false
+                summary: "{{fields.q}}"
+                fields:
+                  - { name: q, label: "Pergunta", widget: string }
+                  - { name: a, label: "Resposta", widget: text }
+
+  - name: tour
+    label: "Tour (fotos do consultório)"
+    files:
+      - name: fotos
+        label: "Fotos do carrossel"
+        file: "content/tour.json"
+        format: json
+        media_folder: "/assets/tour"
+        public_folder: "/assets/tour"
+        fields:
+          - name: fotos
+            label: "Fotos"
+            label_singular: "Foto"
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { name: image, label: "Imagem", widget: image }
+              - { name: alt, label: "Descrição (texto alternativo)", widget: string, required: false }

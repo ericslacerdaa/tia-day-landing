@@ -1,0 +1,10 @@
+{
+  "fotos": [
+    { "image": "/assets/tour/tour-1.jpg", "alt": "Recepção do consultório" },
+    { "image": "/assets/tour/tour-2.jpg", "alt": "Sala de espera e brinquedoteca" },
+    { "image": "/assets/tour/tour-3.jpg", "alt": "Sala clínica" },
+    { "image": "/assets/tour/tour-4.jpg", "alt": "Equipamentos" },
+    { "image": "/assets/tour/tour-5.jpg", "alt": "Ambiente acolhedor" },
+    { "image": "/assets/tour/tour-6.jpg", "alt": "Detalhes do espaço" }
+  ]
+}

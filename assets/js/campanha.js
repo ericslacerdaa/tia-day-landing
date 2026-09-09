@@ -12,28 +12,33 @@
     maps: "https://maps.app.goo.gl/5weKcikMgA9sZADF6"
   };
 
-  // Mensagem específica da campanha (definida em cada página via <body data-wa-msg="...">)
-  const campanhaMsg = document.body.getAttribute("data-wa-msg")
-    || "Olá! Gostaria de agendar uma consulta com a Dra. Dayane. 😊";
-  const campanhaId = document.body.getAttribute("data-campanha") || "site";
+  const campanhaId = function(){ return document.body.getAttribute("data-campanha") || "site"; };
 
   function buildMsg(){
-    var msg = campanhaMsg;
+    var msg = document.body.getAttribute("data-wa-msg")
+      || "Olá! Gostaria de agendar uma consulta com a Dra. Dayane. 😊";
     try{
       var lines = (window.tiaday_utm_lines ? window.tiaday_utm_lines() : []);
       if(lines.length) msg += "\n\n(" + lines.join(" | ") + ")";
     }catch(e){}
     return msg;
   }
-  const waUrl = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(buildMsg());
 
-  // Aplica o link do WhatsApp em tudo que tiver .js-wa (ou href="#whats")
-  document.querySelectorAll('.js-wa, a[href="#whats"]').forEach(function(a){
-    a.setAttribute("href", waUrl);
-    a.setAttribute("target", "_blank");
-    a.setAttribute("rel", "noopener");
-    a.addEventListener("click", function(){ trackEvent("whatsapp_click", { campanha: campanhaId, local: a.dataset.local || "cta" }); });
-  });
+  // Aplica o link do WhatsApp em tudo que tiver .js-wa (pode ser chamado de novo após render dinâmico)
+  function wireWa(){
+    var waUrl = "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(buildMsg());
+    document.querySelectorAll('.js-wa, a[href="#whats"]').forEach(function(a){
+      a.setAttribute("href", waUrl);
+      a.setAttribute("target", "_blank");
+      a.setAttribute("rel", "noopener");
+      if(!a.dataset.waWired){
+        a.dataset.waWired = "1";
+        a.addEventListener("click", function(){ trackEvent("whatsapp_click", { campanha: campanhaId(), local: a.dataset.local || "cta" }); });
+      }
+    });
+  }
+  wireWa();
+  window.tiaday_wireWa = wireWa;
 
   // Ano dinâmico no rodapé
   const y = document.getElementById("year"); if(y) y.textContent = new Date().getFullYear();
@@ -63,14 +68,14 @@
     io.observe(el);
   });
 
-  /* ===== FAQ acordeão ===== */
-  document.querySelectorAll(".faq-q").forEach(function(q){
-    q.addEventListener("click", function(){
-      const item = q.parentElement;
-      const open = item.classList.contains("open");
-      document.querySelectorAll(".faq-item").forEach(function(i){ i.classList.remove("open"); const a=i.querySelector(".faq-a"); if(a) a.style.maxHeight=null; });
-      if(!open){ item.classList.add("open"); const a=item.querySelector(".faq-a"); if(a) a.style.maxHeight=a.scrollHeight+"px"; }
-    });
+  /* ===== FAQ acordeão (delegação — funciona com conteúdo dinâmico) ===== */
+  document.addEventListener("click", function(ev){
+    var q = ev.target.closest ? ev.target.closest(".faq-q") : null;
+    if(!q) return;
+    var item = q.parentElement;
+    var open = item.classList.contains("open");
+    document.querySelectorAll(".faq-item").forEach(function(i){ i.classList.remove("open"); var a=i.querySelector(".faq-a"); if(a) a.style.maxHeight=null; });
+    if(!open){ item.classList.add("open"); var a2=item.querySelector(".faq-a"); if(a2) a2.style.maxHeight=a2.scrollHeight+"px"; }
   });
 
   /* ===== Contadores animados (faixa de números) ===== */
@@ -93,5 +98,5 @@
   }
 
   // pageview inicial da campanha
-  trackEvent("lp_view", { campanha: campanhaId });
+  trackEvent("lp_view", { campanha: campanhaId() });
 })();

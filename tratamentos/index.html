@@ -119,12 +119,13 @@
 <script src="../assets/js/tratamentos-data.js"></script>
 <script>
 (function(){
-  var D = window.TRATAMENTOS || {ordem:[],itens:{}};
+  function toD(itens){ var d={ordem:[],itens:{}}; (itens||[]).forEach(function(it){ if(it&&it.slug){ d.ordem.push(it.slug); d.itens[it.slug]=it; } }); return d; }
   var slug = new URLSearchParams(location.search).get("t");
   var content = document.getElementById("content");
   var wa = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4-1.1l-.3-.2-2.8.7.7-2.8-.2-.3A8 8 0 1112 20z"/></svg>';
   function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 
+  function render(D){
   if(slug && D.itens[slug]){
     var it = D.itens[slug];
     document.title = it.title + " | Dra. Dayane Rodrigues — Odontopediatra em BH";
@@ -159,6 +160,12 @@
     h2 += '</div></div></section>';
     content.innerHTML = h2;
   }
+    if(window.tiaday_wireWa) window.tiaday_wireWa();
+  }
+  fetch("../content/tratamentos.json", {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(j){ render(toD(j.itens)); })
+    .catch(function(){ render(window.TRATAMENTOS || {ordem:[],itens:{}}); });
 })();
 </script>
 <script src="../assets/js/campanha.js"></script>
