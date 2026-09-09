@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tiadayodontopediatra.com.br/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/agendar.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Landing pages de campanha -->
+  <url><loc>https://tiadayodontopediatra.com.br/campanhas/check-up.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/campanhas/recem-nascidos.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/campanhas/troca-de-dentes.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/campanhas/primeiros-dentinhos.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Tratamentos -->
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=prevencao</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=limpeza</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=fluor</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=selantes</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=carie</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=canal</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=frenectomia</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=frenotomia</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=traumatismos</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=respiracao-bucal</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=bruxismo</loc><priority>0.6</priority></url>
+  <url><loc>https://tiadayodontopediatra.com.br/tratamentos/?t=mantenedores</loc><priority>0.6</priority></url>
+</urlset>

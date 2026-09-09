@@ -3,13 +3,30 @@
   publish = "."
   command = ""
 
-# Cabeçalhos de cache: assets podem ser cacheados; HTML sempre revalida
-[[headers]]
-  for = "/assets/*"
-  [headers.values]
-    Cache-Control = "public, max-age=604800"
-
+# HTML sempre revalida (pega a versão nova na hora)
 [[headers]]
   for = "/*.html"
   [headers.values]
     Cache-Control = "public, max-age=0, must-revalidate"
+
+# JS e CSS sempre revalidam — garante que correções cheguem rápido
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Imagens: cache moderado de 1 dia (nomes estáveis, atualizam rápido)
+[[headers]]
+  for = "/assets/*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/assets/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
