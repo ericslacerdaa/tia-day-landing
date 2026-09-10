@@ -537,6 +537,26 @@ footer a:hover{color:var(--rose-claro)}
 }
 @media(max-width:440px){.footer-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-anim]{opacity:1;transform:none}}
+
+/* ============ Polimento mobile (conforto + acessibilidade) ============ */
+a,button{-webkit-tap-highlight-color:rgba(145,165,197,.25)}
+@media(max-width:600px){
+  .container{padding-left:20px;padding-right:20px}
+  .btn{min-height:52px}
+  .btn-lg{padding:17px 28px}
+  .hero-actions{gap:12px}
+  .hero-actions .btn{width:100%}
+  .wa-form input,.wa-form select,.wa-form label{font-size:16px}
+  .form-pop-body .wa-form input,.form-pop-body .wa-form select{font-size:16px}
+  .hero p.sub{font-size:1.05rem}
+  .conf-card p,.dif-card p,.fase-card li,.tl-step p,.testi-card blockquote,.faq-a p,.trat-card p{font-size:.95rem}
+  .section-head{margin-bottom:40px}
+  .form-pop-launcher{bottom:80px}
+}
+@media(max-width:380px){
+  .container{padding-left:16px;padding-right:16px}
+  .hero h1{font-size:clamp(1.8rem,8vw,2.2rem)}
+}
 </style>
 </head>
 <body>

@@ -260,3 +260,31 @@ h2.section-title{font-size:clamp(1.9rem,4vw,3rem);text-align:center;letter-spaci
 }
 @media(max-width:600px){.bene-grid{grid-template-columns:1fr}.lp-footer .cols{grid-template-columns:1fr}.lp-float.one{left:0}.lp-float.two{right:0}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}[data-anim]{opacity:1;transform:none}}
+
+/* ============ Polimento mobile (conforto + acessibilidade) ============ */
+a,button{-webkit-tap-highlight-color:rgba(145,165,197,.25)}
+@media(max-width:600px){
+  .container{padding-left:20px;padding-right:20px}
+  /* Alvos de toque confortáveis */
+  .btn{min-height:52px}
+  .btn-lg{padding:17px 28px}
+  /* CTAs do hero em largura total (mais fáceis de tocar) */
+  .lp-hero .actions{gap:12px}
+  .lp-hero .actions .btn{width:100%}
+  .detalhe-hero .hero-actions .btn{width:100%}
+  /* Campos: 16px evita o zoom automático do iOS ao focar */
+  .wa-form input,.wa-form select,.wa-form label{font-size:16px}
+  .form-pop-body .wa-form input,.form-pop-body .wa-form select{font-size:16px}
+  /* Leitura mais confortável */
+  .lp-hero p.sub{font-size:1.05rem}
+  .bene-card p,.step p,.testi-card blockquote,.faq-a p{font-size:.95rem}
+  .section-head{margin-bottom:40px}
+  /* Respiro no topo (abaixo do cabeçalho fixo) */
+  .lp-hero{padding-top:104px}
+  /* Flutuantes: garantir que não colidam nem cubram demais */
+  .form-pop-launcher{bottom:80px}
+}
+@media(max-width:380px){
+  .container{padding-left:16px;padding-right:16px}
+  .lp-hero h1{font-size:clamp(1.8rem,8vw,2.2rem)}
+}
