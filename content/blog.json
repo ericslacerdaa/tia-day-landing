@@ -1,0 +1,122 @@
+{
+  "posts": [
+    {
+      "slug": "primeira-visita-ao-dentista",
+      "date": "2026-09-06",
+      "cat": "Primeira infância",
+      "title": "Quando levar meu filho ao dentista pela primeira vez?",
+      "excerpt": "A primeira visita deveria acontecer bem antes do que a maioria dos pais imagina. Entenda o momento ideal e por que ele faz tanta diferença.",
+      "body": [
+        { "t": "p", "v": "Uma das perguntas que mais escutamos no consultório é: “com que idade devo levar meu filho ao dentista?”. A resposta surpreende muita gente: o ideal é a primeira visita acontecer com o nascimento do primeiro dentinho ou, no mais tardar, até o primeiro ano de vida." },
+        { "t": "h", "v": "Por que tão cedo?" },
+        { "t": "p", "v": "Nessa fase, o objetivo não é “tratar” nada — é prevenir. A consulta serve para orientar a higiene, tirar dúvidas sobre amamentação e mamadeira, avaliar a linguinha e criar, desde cedo, uma relação tranquila e positiva da criança com o dentista." },
+        { "t": "h", "v": "O que acontece na primeira consulta" },
+        { "t": "ul", "v": [
+          "Avaliação da boca, dos dentinhos e da gengiva",
+          "Orientação de higiene adequada para a idade",
+          "Conversa sobre hábitos: chupeta, mamadeira e alimentação",
+          "Espaço para todas as suas dúvidas, sem pressa"
+        ] },
+        { "t": "p", "v": "Começar cedo transforma a ida ao dentista em algo natural — e não em um evento assustador que só acontece quando “já está doendo”. Prevenir é sempre mais simples, mais barato e mais confortável para o seu filho." }
+      ]
+    },
+    {
+      "slug": "bruxismo-infantil",
+      "date": "2026-09-11",
+      "cat": "Hábitos",
+      "title": "Meu filho range os dentes à noite: o que é bruxismo infantil?",
+      "excerpt": "Aquele barulhinho de ranger durante o sono assusta os pais. Saiba o que pode causar, quando observar e como cuidar.",
+      "body": [
+        { "t": "p", "v": "Se você já ouviu seu filho rangendo os dentes durante o sono, saiba que isso é mais comum do que parece na infância. Chamamos de bruxismo o hábito de ranger ou apertar os dentes, geralmente à noite." },
+        { "t": "h", "v": "O que pode estar por trás" },
+        { "t": "p", "v": "As causas são variadas: ansiedade e agitação, fases de troca dos dentes, respiração pela boca e até alterações no sono. Nem todo bruxismo exige tratamento imediato, mas merece acompanhamento." },
+        { "t": "h", "v": "Quando ficar atento" },
+        { "t": "ul", "v": [
+          "Ranger frequente e alto durante o sono",
+          "Desgaste visível nos dentes",
+          "Queixas de dor de cabeça ou na mandíbula ao acordar",
+          "Sono agitado, ronco ou respiração pela boca"
+        ] },
+        { "t": "p", "v": "Na consulta, avaliamos os dentes, investigamos possíveis causas e orientamos como proteger o sorriso. Em muitos casos, o bruxismo diminui sozinho com o tempo — mas o acompanhamento evita desgastes e desconfortos maiores." }
+      ]
+    },
+    {
+      "slug": "dente-de-leite-precisa-tratar",
+      "date": "2026-09-16",
+      "cat": "Prevenção",
+      "title": "Dente de leite tem que tratar? Por que a resposta é sim",
+      "excerpt": "“Mas ele vai cair mesmo…” — é o que muitos pais pensam. Só que cuidar do dente de leite é essencial para a saúde do sorriso adulto.",
+      "body": [
+        { "t": "p", "v": "Existe um mito muito comum: como o dente de leite vai cair, não precisaria de cuidado. Na prática, é o contrário — os dentes de leite têm funções importantíssimas e cuidar deles faz diferença por muitos anos." },
+        { "t": "h", "v": "Para que servem os dentes de leite" },
+        { "t": "ul", "v": [
+          "Mastigar bem, o que influencia a nutrição",
+          "Falar e pronunciar corretamente",
+          "Guardar o espaço para os dentes permanentes nascerem alinhados",
+          "Dar confiança no sorriso da criança"
+        ] },
+        { "t": "h", "v": "O que acontece se não cuidamos" },
+        { "t": "p", "v": "Uma cárie não tratada pode causar dor, infecção e até prejudicar o dente permanente que está se formando embaixo. A perda precoce de um dente de leite também pode bagunçar o espaço e levar a problemas de mordida no futuro." },
+        { "t": "p", "v": "Por isso, ao primeiro sinal de mancha, cárie ou dor, vale marcar uma avaliação. Quanto antes, mais simples e confortável é o cuidado." }
+      ]
+    },
+    {
+      "slug": "chupeta-e-mamadeira",
+      "date": "2026-09-21",
+      "cat": "Hábitos",
+      "title": "Chupeta e mamadeira: até quando e como parar sem drama",
+      "excerpt": "Tirar a chupeta é um desafio para muitas famílias. Veja o momento certo e estratégias gentis que funcionam.",
+      "body": [
+        { "t": "p", "v": "Chupeta e mamadeira acolhem o bebê, mas, quando usadas por muito tempo, podem afetar a posição dos dentes e o desenvolvimento da boca. A boa notícia é que dá para retirar com carinho e sem sofrimento." },
+        { "t": "h", "v": "Até quando?" },
+        { "t": "p", "v": "De forma geral, quanto mais cedo a retirada começar, mais fácil — o ideal é reduzir o uso a partir dos 2 anos e concluir por volta dos 3. Cada criança tem seu ritmo, e o acompanhamento ajuda a definir o melhor caminho." },
+        { "t": "h", "v": "Estratégias gentis" },
+        { "t": "ul", "v": [
+          "Reduza aos poucos, começando pelos momentos do dia",
+          "Ofereça segurança e colo em vez da chupeta nos momentos de estresse",
+          "Nada de castigo: comemore cada avanço",
+          "Use histórias e combinados lúdicos (a “fada da chupeta”, por exemplo)"
+        ] },
+        { "t": "p", "v": "Se você sentir dificuldade ou notar mudanças na mordida, podemos ajudar com orientação individualizada — e, se necessário, acompanhamento preventivo." }
+      ]
+    },
+    {
+      "slug": "escovacao-por-idade",
+      "date": "2026-09-26",
+      "cat": "Higiene",
+      "title": "Escovação por idade: a técnica certa do bebê ao pré-adolescente",
+      "excerpt": "A forma de escovar (e quem escova) muda conforme a criança cresce. Um guia prático por fase.",
+      "body": [
+        { "t": "p", "v": "Higienizar a boca é o hábito preventivo mais importante — mas ele muda conforme a idade. Aqui vai um guia rápido para cada fase." },
+        { "t": "h", "v": "Antes dos primeiros dentes" },
+        { "t": "p", "v": "Limpe a gengiva do bebê com uma gaze ou dedeira úmida após as mamadas. Isso já cria o hábito e mantém a boca saudável." },
+        { "t": "h", "v": "Do primeiro dente aos 3 anos" },
+        { "t": "p", "v": "Use escova macia e uma quantidade mínima de creme dental com flúor (do tamanho de um grão de arroz). Quem escova é o adulto." },
+        { "t": "h", "v": "Dos 3 aos 6 anos" },
+        { "t": "p", "v": "A criança pode participar, mas o adulto sempre finaliza a escovação. A quantidade de creme dental passa a ser do tamanho de um grão de ervilha." },
+        { "t": "h", "v": "A partir dos 7 anos" },
+        { "t": "p", "v": "Aos poucos a criança ganha autonomia, mas vale a supervisão — especialmente na fase de troca dos dentes, quando a escovação fica mais difícil. O fio dental entra em cena assim que os dentes encostam uns nos outros." }
+      ]
+    },
+    {
+      "slug": "respiracao-bucal-sinais",
+      "date": "2026-10-01",
+      "cat": "Saúde",
+      "title": "Respiração bucal: sinais de alerta que os pais não devem ignorar",
+      "excerpt": "Dormir de boca aberta, roncar e ter sono agitado pode ser mais do que um detalhe. Entenda os sinais.",
+      "body": [
+        { "t": "p", "v": "Respirar deveria ser um trabalho do nariz. Quando a criança passa a respirar pela boca com frequência, isso pode afetar o sono, o crescimento da face e até a posição dos dentes." },
+        { "t": "h", "v": "Fique atento a estes sinais" },
+        { "t": "ul", "v": [
+          "Boca sempre aberta, inclusive durante o sono",
+          "Ronco e sono agitado",
+          "Olheiras e cansaço mesmo dormindo o suficiente",
+          "Dificuldade de atenção e irritabilidade",
+          "Lábios ressecados e mau hálito"
+        ] },
+        { "t": "p", "v": "A respiração bucal costuma ter várias causas e o cuidado é integrado. Na odontopediatria, avaliamos os sinais na boca e na face e orientamos os próximos passos, encaminhando a outros especialistas quando necessário." },
+        { "t": "p", "v": "Percebeu vários desses sinais no seu filho? Vale uma avaliação — quanto antes, mais simples é conduzir." }
+      ]
+    }
+  ]
+}

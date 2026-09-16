@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blog | Dra. Dayane Rodrigues — Odontopediatra em BH</title>
+<meta name="description" content="Conteúdos sobre saúde bucal infantil da Dra. Dayane Rodrigues, odontopediatra em Belo Horizonte: prevenção, hábitos, higiene e cuidados por fase." />
+<meta name="robots" content="index,follow" />
+<meta name="theme-color" content="#91A5C5" />
+<link rel="icon" type="image/png" href="../assets/logo-mark.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../assets/css/base.css" />
+<!-- Rastreamento (Meta Pixel + Google) -->
+<script src="../assets/js/tracking.js"></script>
+<style>
+  .blog-hero{padding-top:120px;text-align:center}
+  .blog-hero h1{font-size:clamp(2rem,4.4vw,3rem);margin:6px 0 14px}
+  .post-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .post-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-soft);padding:26px 24px;display:flex;flex-direction:column;gap:8px;transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
+  .post-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-hover)}
+  .post-card .cat{font-size:.7rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--rose-texto)}
+  .post-card h3{font-size:1.12rem;line-height:1.25}
+  .post-card p{font-size:.86rem;color:var(--tinta-suave);flex:1}
+  .post-card .meta{font-size:.74rem;color:var(--tinta-suave)}
+  .post-card .go{font-weight:600;color:var(--azul-texto);font-size:.84rem;margin-top:4px}
+  .article{max-width:760px;margin:0 auto}
+  .article .voltar{display:inline-block;font-size:.84rem;font-weight:600;color:var(--azul-texto);margin-bottom:16px}
+  .article .cat{font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--rose-texto)}
+  .article h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:8px 0 10px;text-align:left}
+  .article .meta{font-size:.82rem;color:var(--tinta-suave);margin-bottom:26px}
+  .article-body h3{font-family:var(--font-title);color:var(--azul-serenity-dark);font-size:1.2rem;margin:26px 0 8px}
+  .article-body p{color:var(--tinta);font-size:1.02rem;line-height:1.75;margin-bottom:14px}
+  .article-body ul{margin:0 0 16px 2px;list-style:none;display:grid;gap:9px}
+  .article-body li{display:flex;gap:11px;align-items:flex-start;font-size:1rem;color:var(--tinta)}
+  .article-body li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--azul-serenity);flex:0 0 auto;margin-top:9px}
+  @media(max-width:900px){.post-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:600px){.post-grid{grid-template-columns:1fr}}
+</style>
+</head>
+
+<body data-campanha="blog" data-wa-msg="Olá! Vim pelo blog e gostaria de agendar uma consulta para meu filho(a). 😊">
+
+<!-- HEADER -->
+<header class="lp-header" id="lpHeader">
+  <a href="../index.html" class="lp-brand">
+    <img src="../assets/logo-mark.png" alt="Dra. Dayane Rodrigues — Odontopediatra" />
+    <span class="nm"><b>Dayane Rodrigues</b><small>Odontopediatra</small></span>
+  </a>
+  <a class="btn btn-wa js-wa" data-local="header">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4-1.1l-.3-.2-2.8.7.7-2.8-.2-.3A8 8 0 1112 20z"/></svg>
+    <span class="lbl">Agendar</span>
+  </a>
+</header>
+
+<main id="content"></main>
+
+<!-- FORMULÁRIO -->
+<section class="block tint-rose" id="agendar">
+  <div class="container narrow">
+    <div class="form-wrap" data-anim="up">
+      <div class="form-head">
+        <span class="eyebrow">Agendamento</span>
+        <h2>Agende a consulta do seu filho</h2>
+        <p>Preencha e a mensagem já vai montada para o WhatsApp, com a idade da criança e o que você procura.</p>
+      </div>
+      <form class="wa-form" novalidate>
+        <label>Nome do responsável<input name="nome" type="text" placeholder="Seu nome" required /></label>
+        <label>WhatsApp<input name="tel" type="tel" inputmode="tel" placeholder="(31) 9 9999-9999" required /></label>
+        <label>Idade da criança <span class="opt">(opcional)</span><input name="idade" type="text" placeholder="Ex.: 3 anos, ou 8 meses" /></label>
+        <label>Primeira consulta ou acompanhamento? <span class="opt">(opcional)</span>
+          <select name="tipo"><option value="">Selecione</option><option>Primeira consulta</option><option>Acompanhamento / retorno</option></select></label>
+        <label>Melhor período <span class="opt">(opcional)</span>
+          <select name="periodo"><option value="">Selecione</option><option>Manhã</option><option>Tarde</option><option>Indiferente</option></select></label>
+        <p class="form-note">O que você escrever aqui vai direto para a conversa no WhatsApp. Esta página não guarda nem envia nada para nenhum outro lugar.</p>
+        <button type="submit" class="btn btn-enviar btn-lg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4-1.1l-.3-.2-2.8.7.7-2.8-.2-.3A8 8 0 1112 20z"/></svg> Enviar no WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ -->
+<footer class="lp-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <img class="flogo" src="../assets/logo-horizontal.png" alt="Dra. Dayane Rodrigues — Odontopediatra" />
+        <p>Odontopediatria premium em Belo Horizonte. Acolhimento, tecnologia e prevenção para o sorriso do seu filho.</p>
+        <p style="margin-top:6px;color:rgba(255,255,255,.5)">CRO-MG 55731</p>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul class="ct">
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-5.5-7-11a7 7 0 1114 0c0 5.5-7 11-7 11z" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.7"/></svg> <a href="https://maps.app.goo.gl/5weKcikMgA9sZADF6" target="_blank" rel="noopener">R. Bernardo Guimarães, 1843 — Lourdes, BH</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 4h3l2 5-2 1a11 11 0 005 5l1-2 5 2v3a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.7"/></svg> <a href="https://wa.me/5531990606482">(31) 99060-6482</a></li>
+          <li><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg> Seg a Sex · 08h às 18h · Urgência 24h</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="../index.html">Site principal</a></li>
+          <li><a href="./">Todos os artigos</a></li>
+          <li><a href="../tratamentos/">Tratamentos</a></li>
+          <li><a href="../index.html#faq">Dúvidas frequentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year"></span> Dra. Dayane Rodrigues · Tia Day. Todos os direitos reservados.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" data-local="float" aria-label="Falar no WhatsApp">
+  <span class="wa-ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4-1.1l-.3-.2-2.8.7.7-2.8-.2-.3A8 8 0 1112 20zm4.6-5.9c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 01-1.9-1.2 7.2 7.2 0 01-1.3-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4a.5.5 0 000-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-1 2.2 5.2 5.2 0 001.1 2.7 11.9 11.9 0 004.6 4 5.3 5.3 0 002.6.5 2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></span>
+  <span class="wa-label">Agendar pelo WhatsApp</span>
+</a>
+
+<script>
+(function(){
+  var slug = new URLSearchParams(location.search).get("p");
+  var content = document.getElementById("content");
+  function esc(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+  function hoje(){ var d=new Date(); return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+  function publicado(p){ return p && p.date && p.date <= hoje(); }
+  function dataBonita(iso){ try{ return new Date(iso+"T12:00:00").toLocaleDateString("pt-BR",{day:"numeric",month:"long",year:"numeric"}); }catch(e){ return iso; } }
+  function corpo(blocks){
+    var h="";
+    (blocks||[]).forEach(function(b){
+      if(b.t==="h") h+="<h3>"+esc(b.v)+"</h3>";
+      else if(b.t==="ul"){ h+="<ul>"; (b.v||[]).forEach(function(li){ h+="<li>"+esc(li)+"</li>"; }); h+="</ul>"; }
+      else h+="<p>"+esc(b.v)+"</p>";
+    });
+    return h;
+  }
+  function render(posts){
+    posts = (posts||[]).filter(publicado).sort(function(a,b){ return a.date<b.date?1:-1; });
+    var post = slug ? posts.filter(function(p){ return p.slug===slug; })[0] : null;
+    var h="";
+    if(post){
+      document.title = post.title + " | Blog — Dra. Dayane Rodrigues";
+      var md=document.querySelector('meta[name="description"]'); if(md) md.setAttribute("content", post.excerpt||"");
+      h += '<article class="block tint-off blog-hero" style="text-align:left;padding-bottom:0"><div class="container"><div class="article">';
+      h += '<a class="voltar" href="./">← Todos os artigos</a>';
+      h += '<span class="cat">'+esc(post.cat)+'</span><h1>'+esc(post.title)+'</h1>';
+      h += '<div class="meta">'+dataBonita(post.date)+'</div>';
+      h += '</div></div></article>';
+      h += '<section class="block tint-white" style="padding-top:30px"><div class="container"><div class="article article-body">'+corpo(post.body)+'</div></div></section>';
+    } else {
+      h += '<section class="block tint-off blog-hero"><div class="container"><span class="eyebrow">Blog</span><h1>Conteúdos para cuidar bem do sorriso</h1><p class="lead">Dicas de prevenção, hábitos e cuidados por fase — escritos pela Dra. Dayane.</p></div></section>';
+      h += '<section class="block tint-white"><div class="container">';
+      if(!posts.length){ h += '<p class="center" style="color:var(--tinta-suave)">Em breve, novos conteúdos por aqui. 💙</p>'; }
+      else {
+        h += '<div class="post-grid">';
+        posts.forEach(function(p){
+          h += '<a class="post-card" href="?p='+encodeURIComponent(p.slug)+'"><span class="cat">'+esc(p.cat)+'</span><h3>'+esc(p.title)+'</h3><p>'+esc(p.excerpt)+'</p><span class="meta">'+dataBonita(p.date)+'</span><span class="go">Ler artigo →</span></a>';
+        });
+        h += '</div>';
+      }
+      h += '</div></section>';
+    }
+    content.innerHTML = h;
+    if(window.tiaday_wireWa) window.tiaday_wireWa();
+  }
+  fetch("../content/blog.json", {cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(j){ render(j.posts); })
+    .catch(function(){ render([]); });
+})();
+</script>
+<script src="../assets/js/campanha.js"></script>
+<script src="../assets/js/form.js"></script>
+<script src="../assets/js/form-popup.js"></script>
+</body>
+</html>
