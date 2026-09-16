@@ -14,12 +14,12 @@ sozinho — sem servidor nem cron. Para "agendar", basta escrever o post e defin
 | 4 | 2026-09-21 | Chupeta e mamadeira: até quando e como parar sem drama | Hábitos | ✍️ |
 | 5 | 2026-09-26 | Escovação por idade: do bebê ao pré-adolescente | Higiene | ✍️ |
 | 6 | 2026-10-01 | Respiração bucal: sinais de alerta | Saúde | ✍️ |
-| 7 | 2026-10-06 | Dia das Crianças: transformando a escovação em brincadeira | Hábitos | 🗓️ |
-| 8 | 2026-10-11 | Primeira ida sem medo: como preparar seu filho | Comportamento | 🗓️ |
-| 9 | 2026-10-16 | Halloween e doces: aproveitar sem cárie | Alimentação | 🗓️ |
-| 10 | 2026-10-21 | Cárie de mamadeira: o que é e como evitar | Prevenção | 🗓️ |
-| 11 | 2026-10-26 | Dia do Dentista: por que a odontopediatria é diferente | Institucional | 🗓️ |
-| 12 | 2026-10-31 | Flúor faz bem? O papel dele na prevenção | Prevenção | 🗓️ |
+| 7 | 2026-10-06 | Dia das Crianças: transformando a escovação em brincadeira | Hábitos | ✍️ |
+| 8 | 2026-10-11 | Primeira ida sem medo: como preparar seu filho | Comportamento | ✍️ |
+| 9 | 2026-10-16 | Halloween e doces: aproveitar sem cárie | Alimentação | ✍️ |
+| 10 | 2026-10-21 | Cárie de mamadeira: o que é e como evitar | Prevenção | ✍️ |
+| 11 | 2026-10-26 | Dia do Dentista: por que a odontopediatria é diferente | Institucional | ✍️ |
+| 12 | 2026-10-31 | Flúor faz bem? O papel dele na prevenção | Prevenção | ✍️ |
 | 13 | 2026-11-05 | Selantes: escudo contra a cárie nos molares | Prevenção | 🗓️ |
 | 14 | 2026-11-10 | Meu filho caiu e quebrou o dente: o que fazer | Urgência | 🗓️ |
 | 15 | 2026-11-15 | Chupar o dedo: quando preocupa | Hábitos | 🗓️ |

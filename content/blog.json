@@ -117,6 +117,116 @@
         { "t": "p", "v": "A respiração bucal costuma ter várias causas e o cuidado é integrado. Na odontopediatria, avaliamos os sinais na boca e na face e orientamos os próximos passos, encaminhando a outros especialistas quando necessário." },
         { "t": "p", "v": "Percebeu vários desses sinais no seu filho? Vale uma avaliação — quanto antes, mais simples é conduzir." }
       ]
+    },
+    {
+      "slug": "escovacao-brincadeira",
+      "date": "2026-10-06",
+      "cat": "Hábitos",
+      "title": "Dia das Crianças: transformando a escovação em brincadeira",
+      "excerpt": "Escovar os dentes não precisa ser batalha. Neste Dia das Crianças, veja como tornar a rotina um momento leve e divertido.",
+      "body": [
+        { "t": "p", "v": "O Dia das Crianças é o convite perfeito para uma ideia simples: quando a escovação vira brincadeira, ela deixa de ser briga e passa a ser um momento gostoso do dia. E o hábito construído com leveza dura a vida toda." },
+        { "t": "h", "v": "Ideias que funcionam" },
+        { "t": "ul", "v": [
+          "Ponha uma música de 2 minutos: escova enquanto a música toca",
+          "Deixe a criança escolher a própria escova (cor e personagem)",
+          "Escovem juntos — as crianças amam imitar os pais",
+          "Crie um quadrinho de conquistas com adesivos a cada dia"
+        ] },
+        { "t": "p", "v": "Nada de transformar a escovação em castigo: comemore cada avanço. E aproveite a data para marcar uma visita preventiva — cuidar do sorriso também é presente." }
+      ]
+    },
+    {
+      "slug": "primeira-ida-sem-medo",
+      "date": "2026-10-11",
+      "cat": "Comportamento",
+      "title": "Primeira ida sem medo: como preparar seu filho",
+      "excerpt": "A forma como a família fala sobre o dentista faz toda a diferença. Veja como preparar a criança para uma primeira visita tranquila.",
+      "body": [
+        { "t": "p", "v": "Grande parte do medo de dentista nasce em casa, sem querer — em frases ditas com boa intenção. A boa notícia é que dá para preparar a criança de um jeito que a consulta seja leve desde o início." },
+        { "t": "h", "v": "Antes da consulta" },
+        { "t": "ul", "v": [
+          "Fale com naturalidade, como quem vai conhecer uma nova amiga",
+          "Evite palavras assustadoras como dor, agulha, injeção ou arrancar",
+          "Leia livrinhos infantis sobre ir ao dentista",
+          "Brinquem de dentista em casa, contando os dentinhos"
+        ] },
+        { "t": "h", "v": "No dia" },
+        { "t": "p", "v": "No consultório, respeitamos o tempo de cada criança e usamos uma abordagem acolhedora e lúdica. E lembre-se: quanto mais cedo a primeira visita, mais natural a relação com o dentista se torna." },
+        { "t": "p", "v": "Quer agendar essa primeira experiência positiva? Estamos aqui para receber vocês com todo o cuidado." }
+      ]
+    },
+    {
+      "slug": "halloween-e-doces",
+      "date": "2026-10-16",
+      "cat": "Alimentação",
+      "title": "Halloween e doces: como aproveitar sem cárie",
+      "excerpt": "Doce faz parte da infância. O segredo não é proibir — é equilibrar. Veja como curtir sem sustos para os dentes.",
+      "body": [
+        { "t": "p", "v": "Época de doces à vista? A cárie não vem só da quantidade de açúcar, mas principalmente da frequência e do tempo que ele fica em contato com os dentes. Com alguns ajustes, dá para aproveitar sem culpa." },
+        { "t": "h", "v": "Estratégias simples" },
+        { "t": "ul", "v": [
+          "Prefira concentrar os doces logo após uma refeição, não ao longo do dia todo",
+          "Escove os dentes cerca de 30 minutos depois",
+          "Ofereça água para ajudar a limpar a boca",
+          "Doces que grudam (balas mastigáveis) merecem atenção redobrada"
+        ] },
+        { "t": "p", "v": "Proibir costuma gerar o efeito contrário. Ensinar o equilíbrio — e reforçar a higiene — é o que protege o sorriso a longo prazo. Na dúvida sobre o risco de cárie do seu filho, uma avaliação preventiva orienta o melhor caminho." }
+      ]
+    },
+    {
+      "slug": "carie-de-mamadeira",
+      "date": "2026-10-21",
+      "cat": "Prevenção",
+      "title": "Cárie de mamadeira: o que é e como evitar",
+      "excerpt": "Manchas nos dentinhos da frente do bebê podem ser o primeiro sinal. Entenda a cárie precoce e como preveni-la.",
+      "body": [
+        { "t": "p", "v": "A chamada cárie de mamadeira (ou cárie precoce da infância) costuma aparecer nos dentes da frente do bebê e evolui rápido. O primeiro sinal costuma ser manchas esbranquiçadas perto da gengiva." },
+        { "t": "h", "v": "Por que acontece" },
+        { "t": "p", "v": "Ela está ligada ao contato prolongado dos dentes com líquidos açucarados — leite, fórmulas, sucos — especialmente na mamadeira noturna, quando a produção de saliva diminui e a proteção natural cai." },
+        { "t": "h", "v": "Como prevenir" },
+        { "t": "ul", "v": [
+          "Evite a mamadeira adoçada e a de dormir com leite/suco",
+          "Limpe a boca do bebê após as mamadas",
+          "Não deixe o bebê dormir mamando",
+          "Leve ao odontopediatra desde o primeiro dentinho"
+        ] },
+        { "t": "p", "v": "Percebeu manchas diferentes nos dentinhos? Não espere doer — quanto antes avaliarmos, mais simples é reverter." }
+      ]
+    },
+    {
+      "slug": "dia-do-dentista-odontopediatria",
+      "date": "2026-10-26",
+      "cat": "Institucional",
+      "title": "Dia do Dentista: por que a odontopediatria é diferente",
+      "excerpt": "Atender criança não é atender adulto em miniatura. Entenda o que torna a odontopediatria uma especialidade única.",
+      "body": [
+        { "t": "p", "v": "No Dia do Dentista, vale falar de algo que faz muita diferença para as famílias: a odontopediatria é uma especialidade pensada inteiramente para a criança — do jeito de falar ao manejo do comportamento." },
+        { "t": "h", "v": "O que muda no atendimento infantil" },
+        { "t": "ul", "v": [
+          "Linguagem e acolhimento na medida da criança",
+          "Respeito ao tempo e ao ritmo de cada um",
+          "Ambiente lúdico, que reduz o medo",
+          "Técnicas de manejo do comportamento sem trauma",
+          "Foco na prevenção e no acompanhamento do crescimento"
+        ] },
+        { "t": "p", "v": "Escolher um profissional especializado em crianças é o que transforma a ida ao dentista em uma experiência positiva — e constrói adultos que cuidam bem do próprio sorriso." }
+      ]
+    },
+    {
+      "slug": "fluor-faz-bem",
+      "date": "2026-10-31",
+      "cat": "Prevenção",
+      "title": "Flúor faz bem? O papel dele na prevenção",
+      "excerpt": "Cerca-se de muitas dúvidas, mas o flúor é um dos maiores aliados contra a cárie — quando usado do jeito certo.",
+      "body": [
+        { "t": "p", "v": "O flúor gera dúvidas em muitos pais, mas a ciência é clara: usado na medida certa, ele é um dos principais aliados na prevenção da cárie." },
+        { "t": "h", "v": "O que o flúor faz" },
+        { "t": "p", "v": "Ele fortalece o esmalte do dente e o torna mais resistente aos ácidos que causam cárie, ajudando inclusive a reverter manchas iniciais antes que virem buracos." },
+        { "t": "h", "v": "É seguro para crianças?" },
+        { "t": "p", "v": "Sim, quando a quantidade é adequada para a idade: um grão de arroz de creme dental até os 3 anos e um grão de ervilha depois, sempre com supervisão de um adulto para evitar que a criança engula pasta em excesso." },
+        { "t": "p", "v": "Na consulta preventiva, avaliamos o risco de cárie e, quando indicado, fazemos a aplicação profissional de flúor — rápida, indolor e segura." }
+      ]
     }
   ]
 }
