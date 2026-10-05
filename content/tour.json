@@ -1,10 +1,14 @@
 {
   "fotos": [
-    { "image": "/assets/tour/tour-1.jpg", "alt": "Recepção do consultório" },
-    { "image": "/assets/tour/tour-2.jpg", "alt": "Sala de espera e brinquedoteca" },
-    { "image": "/assets/tour/tour-3.jpg", "alt": "Sala clínica" },
-    { "image": "/assets/tour/tour-4.jpg", "alt": "Equipamentos" },
-    { "image": "/assets/tour/tour-5.jpg", "alt": "Ambiente acolhedor" },
-    { "image": "/assets/tour/tour-6.jpg", "alt": "Detalhes do espaço" }
+    { "image": "/assets/tour/tour-01.jpg", "alt": "Sala clínica do consultório" },
+    { "image": "/assets/tour/tour-02.jpg", "alt": "Dra. Dayane em sua sala de atendimento" },
+    { "image": "/assets/tour/tour-03.jpg", "alt": "Cantinho infantil com mesinha e cadeirinhas" },
+    { "image": "/assets/tour/tour-04.jpg", "alt": "Dra. Dayane preparando materiais lúdicos" },
+    { "image": "/assets/tour/tour-05.jpg", "alt": "Visão geral do consultório" },
+    { "image": "/assets/tour/tour-06.jpg", "alt": "Estante de livros e brinquedos" },
+    { "image": "/assets/tour/tour-07.jpg", "alt": "Dra. Dayane com o fantoche de girafa" },
+    { "image": "/assets/tour/tour-08.jpg", "alt": "Gaveta de brindes e materiais para as crianças" },
+    { "image": "/assets/tour/tour-09.jpg", "alt": "Livros infantis sobre saúde bucal" },
+    { "image": "/assets/tour/tour-10.jpg", "alt": "Cabide personalizado Tia Day" }
   ]
 }

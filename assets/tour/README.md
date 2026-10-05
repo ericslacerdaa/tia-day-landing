@@ -5,20 +5,17 @@ consultório, equipamentos, detalhes). Elas aparecem no carrossel da seção
 "Tour pelo Consultório" do site.
 
 ## Como nomear
-Salve as imagens exatamente com estes nomes (na ordem em que quer que apareçam):
+As fotos atuais seguem esta numeração (na ordem em que aparecem):
 
 ```
-tour-1.jpg
-tour-2.jpg
-tour-3.jpg
-tour-4.jpg
-tour-5.jpg
-tour-6.jpg
+tour-01.jpg
+tour-02.jpg
+...
+tour-10.jpg
 ```
 
-- Formato: **.jpg** (se as suas forem .png, me avise que eu ajusto).
-- Enquanto uma foto não existir aqui, o carrossel mostra uma foto atual como reserva —
-  então nunca fica quebrado.
-- Quer mais/menos de 6 fotos? É só me avisar que eu ajusto a lista.
+- A lista e a ordem ficam em `content/tour.json` (editável também pelo painel `/admin`).
+- Formato: **.jpg**.
+- Se o `tour.json` não carregar, o carrossel usa a lista de reserva que está no `index.html`.
 
-> Dica: fotos na horizontal (paisagem) ficam melhores no carrossel. Peso ideal por foto: ~300 KB.
+> Dica: peso ideal por foto ~100–150 KB (no carrossel, cada foto aparece com ~320 px de largura).
