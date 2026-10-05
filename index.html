@@ -34,7 +34,7 @@
   "@context": "https://schema.org",
   "@type": "Dentist",
   "name": "Dra. Dayane Rodrigues — Tia Day | Odontopediatria",
-  "image": "https://tiadayodontopediatra.com.br/assets/capas6.jpg",
+  "image": "https://tiadayodontopediatra.com.br/assets/hero.jpg",
   "description": "Odontopediatra especializada em atendimento infantil em Belo Horizonte. Anestesia computadorizada, laser cirúrgico, laser de baixa potência e foco na prevenção.",
   "medicalSpecialty": "Pediatric Dentistry",
   "priceRange": "$$",
@@ -303,16 +303,18 @@ header.nav.scrolled{
 .gallery .wide{grid-column:span 2}
 
 /* ============ Tecnologias ============ */
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tech-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .tech-card{background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card);transition:transform .4s var(--ease),box-shadow .4s var(--ease)}
 .tech-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover)}
 .tech-card .tech-photo{aspect-ratio:3/4;overflow:hidden}
-.tech-card .tech-body{padding:26px 26px 30px}
+.tech-card .tech-body{padding:24px 22px 28px}
 .tech-card h3{font-size:1.3rem;margin-bottom:6px;color:var(--azul-serenity-dark)}
 .tech-card .tagline{font-size:.82rem;color:var(--rose-medio);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px;display:block}
 .tech-card ul{list-style:none}
 .tech-card li{display:flex;gap:9px;align-items:flex-start;font-size:.88rem;color:var(--tinta-suave);margin-bottom:8px}
 .tech-card li .ck{color:var(--verde-salvia);flex:0 0 auto;margin-top:3px}
+.tech-card .tech-indic{margin-top:14px;padding-top:12px;border-top:1px solid rgba(0,0,0,.06);font-size:.8rem;line-height:1.55;color:var(--tinta-suave)}
+.tech-card .tech-indic strong{color:var(--azul-serenity-dark)}
 
 /* ============ Tratamentos ============ */
 .trat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
@@ -601,7 +603,7 @@ a,button{-webkit-tap-highlight-color:rgba(145,165,197,.25)}
     </div>
     <div class="hero-visual" data-anim="right">
       <div class="hero-photo">
-        <img class="photo-img" src="assets/capas6.jpg" alt="Dra. Dayane Rodrigues sorrindo no consultório Tia Day" />
+        <img class="photo-img" src="assets/hero.jpg" alt="Dra. Dayane Rodrigues sorrindo no consultório Tia Day" />
       </div>
       <div class="hero-float one">
         <span class="ic">★</span>
@@ -729,7 +731,7 @@ a,button{-webkit-tap-highlight-color:rgba(145,165,197,.25)}
     </div>
     <div class="tech-grid">
       <div class="tech-card" data-anim="up">
-        <div class="tech-photo"><img class="photo-img" loading="lazy" src="assets/tech-morpheus.png" alt="Dra. Dayane com o equipamento de anestesia computadorizada Morpheus" /></div>
+        <div class="tech-photo"><img class="photo-img" loading="lazy" src="assets/tech-morpheus.jpg" alt="Equipamento de anestesia computadorizada Morpheus" /></div>
         <div class="tech-body">
           <h3>Morpheus</h3><span class="tagline">Anestesia Computadorizada</span>
           <ul>
@@ -741,7 +743,7 @@ a,button{-webkit-tap-highlight-color:rgba(145,165,197,.25)}
         </div>
       </div>
       <div class="tech-card" data-anim="up">
-        <div class="tech-photo"><img class="photo-img" loading="lazy" src="assets/tech-laser.jpg" alt="Dra. Dayane com o laser de baixa potência" /></div>
+        <div class="tech-photo"><img class="photo-img" loading="lazy" src="assets/tech-laser-cirurgico.jpg" alt="Equipamento de laser cirúrgico do consultório" /></div>
         <div class="tech-body">
           <h3>Laser Cirúrgico</h3><span class="tagline">Procedimentos delicados</span>
           <ul>
@@ -753,14 +755,28 @@ a,button{-webkit-tap-highlight-color:rgba(145,165,197,.25)}
         </div>
       </div>
       <div class="tech-card" data-anim="up">
-        <div class="tech-photo"><img class="photo-img" loading="lazy" src="assets/tech-dentes.png" alt="Dra. Dayane com modelo dental para diagnóstico e planejamento" /></div>
+        <div class="tech-photo"><img class="photo-img" loading="lazy" src="assets/tech-laserterapia.jpg" alt="Dra. Dayane com o laser de baixa potência" /></div>
         <div class="tech-body">
-          <h3>Diagnóstico Digital</h3><span class="tagline">Tecnologia de imagem</span>
+          <h3>Laserterapia</h3><span class="tagline">Laser de baixa potência</span>
           <ul>
-            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Fotografia clínica</li>
-            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Planejamento individualizado</li>
-            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Precisão no diagnóstico</li>
+            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Alivia a dor</li>
+            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Reduz a inflamação</li>
+            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Acelera a cicatrização</li>
           </ul>
+          <p class="tech-indic"><strong>Indicações:</strong> aftas • estomatite • mão-pé-boca • herpes • mucosite • pós-operatório • traumas • desconforto na erupção dentária</p>
+        </div>
+      </div>
+      <div class="tech-card" data-anim="up">
+        <div class="tech-photo"><img class="photo-img" loading="lazy" src="assets/tech-atendimento-ludico.jpg" alt="Dra. Dayane com fantoche de girafa usado no atendimento lúdico" /></div>
+        <div class="tech-body">
+          <h3>Atendimento Lúdico</h3><span class="tagline">Dentista sem medo</span>
+          <ul>
+            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Fantoches e brincadeiras</li>
+            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Técnica falar-mostrar-fazer</li>
+            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Menos medo e ansiedade</li>
+            <li><span class="ck"><svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></span> Vínculo de confiança</li>
+          </ul>
+          <p class="tech-indic"><strong>Como funciona:</strong> antes de cada etapa, a criança conhece os instrumentos brincando, no ritmo dela, e transforma a consulta em uma experiência positiva.</p>
         </div>
       </div>
     </div>
